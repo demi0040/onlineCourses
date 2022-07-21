@@ -1,0 +1,166 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+  Free Code Camp Responsive Web Design Project
+-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mehmed II</title>
+  </head>
+  <body>
+    <main id="main" role="main">
+      <h1 id="title">Mehmed II</h1>
+      <p>(30 March 1432 - 3 May 1481) commonly known as Mehmed the Conqueror</p>
+      <figure id="img-div">
+        <img
+          id="image"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gentile_Bellini_003.jpg/1200px-Gentile_Bellini_003.jpg"
+          alt="Portrate of Mehmed II by Gentile Bellini"
+        />
+        <figcaption id="img-caption">
+          Ottoman sultan who ruled from August 1444 to September 1446, and then
+          later from February 1451 to May 1481
+        </figcaption>
+      </figure>
+      <section id="tribute-info">
+        <h2 id="headline">Cosquests of Mehmed II</h2>
+        <ul>
+          <li><strong>1453</strong> - Conquest of Constantinople</li>
+          <li><strong>1454 - 1459</strong> - Conquest of Serbia</li>
+          <li><strong>1458 - 1460</strong> - Conquest of Morea</li>
+          <li><strong>1460 - 1461</strong> - Conquest of Trebizond</li>
+          <li><strong>1459 - 1462</strong> - Submission of Wallachia</li>
+          <li><strong>1463</strong> - Conquest of Bosnia</li>
+          <li><strong>1464 - 1473</strong> - Anatolian conqusts</li>
+          <li><strong>1466 - 1478</strong> - Conquest of Albenia</li>
+        </ul>
+        <blockquote
+          cite="https://quotepark.com/quotes/1829822-mehmed-ii-in-order-to-see-the-boundaries-of-the-probabilitie/"
+        >
+          <p>
+            "In order to see the boundaries of the probabilities, need to try
+            impossible."
+          </p>
+          <cite>-- Mehmed II</cite>
+        </blockquote>
+        <h3>
+          To read more information about Mehmed II, you can visit
+          <a
+            href="https://en.wikipedia.org/wiki/Mehmed_II"
+            id="tribute-link"
+            target="_blank"
+            >Wikipedia Entry</a
+          >
+        </h3>
+      </section>
+    </main>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  #main {
+    margin: 0;
+  }
+
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+** end of undefined **
+

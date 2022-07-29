@@ -8,17 +8,16 @@
 
 <body>
 
-    <h1 id="rgbH1">Click These Buttons</h1>
-    <p>And Prepare To Have Your Mind Blown</p>
-    <button id="rgbBtn">Hello</button>
-    <button id="goodbye">Goodbye</button>
+    <h1>Grocery List</h1>
+    <form action="/nowhere">
+        <label for="item">Enter A Product</label>
+        <input type="text" id="product" name="product">
+        <label for="item">Enter A Quantity</label>
+        <input type="number" id="qty" name="qty">
+        <button>Submit</button>
+    </form>
 
-    <div>
-        <button id="testButton">Click Me</button>
-        <input type="text" id="testInput">
-    </div>
-
-    <div id="container"></div>
+    <ul id="list"></ul>
 
     <script src="./learningJS_1.js"></script>
 </body>

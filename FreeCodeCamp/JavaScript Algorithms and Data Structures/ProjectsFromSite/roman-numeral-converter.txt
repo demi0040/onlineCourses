@@ -1,0 +1,31 @@
+function convertToRoman(num) {
+  const romanNums = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1
+  }
+  let romanConv = ''
+
+  for (const key in romanNums) {
+    const numVal = romanNums[key]
+
+    while(numVal<=num) {
+      num -= numVal
+      romanConv += key
+    }
+  }
+  
+  return romanConv;
+ }
+
+convertToRoman(36);

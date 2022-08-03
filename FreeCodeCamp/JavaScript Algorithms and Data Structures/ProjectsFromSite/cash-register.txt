@@ -1,0 +1,38 @@
+function checkCashRegister(price, cash, cid) {
+  let change = cash*100 - price*100;
+  let totalCid = 0
+  let moneyTypes = {
+    'ONE HUNDRED': 10000,
+    'TWENTY': 2000,
+    'TEN': 1000,
+    'FIVE': 500,
+    'ONE': 100,
+    'QUARTER': 25,
+    'DIME': 10,
+    'NICKEL': 5,
+    'PENNY': 1
+  }
+  
+  for(let e of cid) totalCid += e[1]*100
+
+  if (change > totalCid) return {status: "INSUFFICIENT_FUNDS", change: []} 
+  else if (change === totalCid) return {status: "CLOSED", change: cid}
+  else {
+    const arrContSuf = []
+    cid = cid.reverse()
+    for (let e of cid) {
+      let arrCont = [e[0], 0]
+      e[1] = e[1]*100
+      while (change>= moneyTypes[e[0]] && e[1] > 0){
+        change -= moneyTypes[e[0]]
+        e[1] -= moneyTypes[e[0]]
+        arrCont[1] += moneyTypes[e[0]]/100
+      }
+      if (arrCont[1] > 0) arrContSuf.push(arrCont)
+    }
+    if (change > 0) return {status: "INSUFFICIENT_FUNDS", change: []} 
+    return {status: "OPEN", change: arrContSuf} 
+  }
+}
+
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
